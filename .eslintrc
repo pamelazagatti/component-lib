@@ -1,41 +1,41 @@
 {
-  root: true,
-  parser: "babel-eslint",
-  plugins: [/*"import", */"jsx-a11y", "react"],
-  env: {
-      browser: true,
-      commonjs: true,
-      es6: true,
-      jest: true,
-      node: true
+  "root": true,
+  "parser": "babel-eslint",
+  "plugins": ["import", "jsx-a11y", "react"],
+  "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "jest": true,
+      "node": true
     },
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: "module",
-    ecmaFeatures: {
-      jsx: true,
-      generators: true,
-      experimentalObjectRestSpread: true
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "generators": true,
+      "experimentalObjectRestSpread": true
     }
   },
-  settings: {
+  "settings": {
     "import/ignore": [
       "node_modules",
       "\\.(json|css|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm)$",
     ],
     "import/extensions": [".js"],
     "import/resolver": {
-      node: {
-        extensions: [".js", ".json"]
+      "node": {
+        "extensions": [".js", ".json"]
       }
     }
   },
-  rules: {
+  "rules": {
     // http://eslint.org/docs/rules/
     "array-callback-return": "warn",
     "camelcase": "warn",
     "curly": "warn",
-    "default-case": ["warn", { commentPattern: "^no default$" }],
+    "default-case": ["warn", { "commentPattern": "^no default$" }],
     "dot-location": ["warn", "property"],
     "eol-last": "warn",
     "eqeqeq": ["warn", "always"],
@@ -67,17 +67,17 @@
     "no-invalid-regexp": "warn",
     "no-iterator": "warn",
     "no-label-var": "warn",
-    "no-labels": ["warn", { allowLoop: false, allowSwitch: false }],
+    "no-labels": ["warn", { "allowLoop": false, "allowSwitch": false }],
     "no-lone-blocks": "warn",
     "no-loop-func": "warn",
     "no-mixed-operators": ["warn", {
-      groups: [
+      "groups": [
         ["&", "|", "^", "~", "<<", ">>", ">>>"],
         ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
         ["&&", "||"],
         ["in", "instanceof"]
       ],
-      allowSamePrecedence: false
+      "allowSamePrecedence": false
     }],
     "no-multi-str": "warn",
     "no-new-func": "warn",
@@ -109,26 +109,26 @@
     "no-unsafe-negation": "warn",
     "no-unused-expressions": "warn",
     "no-unused-labels": "warn",
-    "no-unused-vars": ["warn", { vars: "local", args: "none" }],
+    "no-unused-vars": ["warn", { "vars": "local", "args": "none" }],
     "no-use-before-define": ["warn", "nofunc"],
     "no-useless-computed-key": "warn",
     "no-useless-concat": "warn",
     "no-useless-constructor": "warn",
     "no-useless-escape": "warn",
     "no-useless-rename": ["warn", {
-      ignoreDestructuring: false,
-      ignoreImport: false,
-      ignoreExport: false,
+      "ignoreDestructuring": false,
+      "ignoreImport": false,
+      "ignoreExport": false
     }],
     "no-with": "warn",
     "no-whitespace-before-property": "warn",
     "object-curly-spacing": ["warn", "always"],
     "operator-assignment": ["warn", "always"],
-    radix: "warn",
+    "radix": "warn",
     "require-yield": "warn",
     "rest-spread-spacing": ["warn", "never"],
     "semi": "warn",
-    strict: ["warn", "never"],
+    "strict": ["warn", "never"],
     "unicode-bom": ["warn", "never"],
     "use-isnan": "warn",
     "valid-typeof": "warn",
@@ -144,11 +144,11 @@
     "react/jsx-max-props-per-line": "warn",
     "react/jsx-no-bind": ["warn", {"allowArrowFunctions": true}],
     "react/jsx-no-comment-textnodes": "warn",
-    "react/jsx-no-duplicate-props": ["warn", { ignoreCase: true }],
+    "react/jsx-no-duplicate-props": ["warn", { "ignoreCase": true }],
     "react/jsx-no-undef": "warn",
     "react/jsx-pascal-case": ["warn", {
-      allowAllCaps: true,
-      ignore: [],
+      "allowAllCaps": true,
+      "ignore": [],
     }],
     "react/jsx-sort-props": "warn",
     "react/jsx-tag-spacing": "warn",
@@ -173,7 +173,7 @@
     "react/void-dom-elements-no-children": "warn",
 // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
     "jsx-a11y/aria-role": "warn",
-    "jsx-a11y/img-has-alt": "warn",
+    // "jsx-a11y/img-has-alt": "warn",
     "jsx-a11y/img-redundant-alt": "warn",
     "jsx-a11y/no-access-key": "warn"
   }
